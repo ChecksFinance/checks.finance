@@ -23,7 +23,7 @@ import styles from '../styles/Home.module.css'
 import logo from '../public/images/logo.png'
 import backgroundImage from '../public/images/background.png'
 import backgroundWaves from '../public/images/wave.png'
-import section1 from '../public/images/section-1.png'
+import section1 from '../public/images/section1-bg.png'
 
 const _site = {
   title: 'Checks Finance',
@@ -118,9 +118,8 @@ function Section() {
         </Col>
       </Row>
       <Grid.Container gap={2} justify="center">
-        <Grid md={3.5} sm={4.5} xs={7}>
+        <Grid md={5.5} xl={4} sm={7} xs={10}>
           <Image src={section1}
-            className={styles.sectionImage}
             alt="section-banner" />
         </Grid>
       </Grid.Container>
