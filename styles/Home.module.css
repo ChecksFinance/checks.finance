@@ -14,12 +14,6 @@
   color: #444;
 }
 
-.wave {
-  height: 300px;
-  margin-top: 200px;
-  background-color: #444;
-}
-
 .section {
   padding: 4em 0;
 }
@@ -30,6 +24,14 @@
   font-weight: 400;
 }
 
+.backgroundWrapper {
+  position: relative;
+}
+
 .notes {
   color: #999;
+}
+
+.footer {
+  min-height: 420px;
 }

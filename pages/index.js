@@ -11,6 +11,7 @@ import {
   Card,
   Button,
   Tooltip,
+  Collapse,
 } from '@nextui-org/react';
 import { 
   FaTwitter, 
@@ -170,27 +171,39 @@ function Section() {
 function Footer () {
   return (
     <footer>
-      <Container>
+      <Container className={ styles.footer }>
         <Grid.Container
           gap={2}>
-          <Grid md={6}>
+          <Grid md={6} xs={12}>
             <Row>
-              <Text h2
-                className={styles.title}
-                size={30}>{_site.title.toLocaleLowerCase()}</Text>
-            </Row>
-            <Row>
-              <Text>contact@checks.finance</Text>
-            </Row>
-          </Grid>
-          <Grid md={3}>
-            <Row>
-              <Text h3>Contact with us</Text>
+              <Col>
+                <Text h2
+                  className={styles.title}
+                  size={30}>{_site.title.toLocaleLowerCase()}</Text>
+                <Text>contact@checks.finance</Text>
+              </Col>
             </Row>
           </Grid>
-          <Grid md={3}>
+          <Grid md={3} xs={12}>
             <Row>
-              <Text h3>Contact with us</Text>
+              <Col>
+                <Text h4>Keep in touch</Text>
+                <Spacer y={.5} />
+                <Link target={'_blank'}
+                  href={'https://twitter.com/checksfinance'}>
+                  <FaTwitter fill='#444' size={20} />
+                  <Text>@checksfinance</Text>
+                </Link>
+              </Col>
+            </Row>
+          </Grid>
+          <Grid md={3} xs={12}>
+            <Row>
+              <Col>
+                <Text h4>Company</Text>
+                <Spacer y={.5} />
+                <Text>Checks K.K. is an entity registered in Minato-ku, Tokyo, Japan.</Text>
+              </Col>
             </Row>
           </Grid>
         </Grid.Container>
@@ -226,17 +239,18 @@ export default function Home() {
 
       <Container 
         gap={0}
+        className={ styles.backgroundWrapper }
         responsive={false}
-        className={styles.wave}
         fluid>
         <Image
-          alt="backrgound"
+          alt="backrgound footer"
           src={backgroundWaves}
           layout="fill"
-          objectFit="contain"
+          objectFit="cover"
           objectPosition="center bottom"
           quality={100}
         />
+        <Spacer y={3} />
         <Footer />
       </Container>
     </>
