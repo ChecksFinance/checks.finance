@@ -212,6 +212,31 @@ function Footer () {
   )
 }
 
+function QandA() {
+  return (
+    <Grid.Container gap={2} 
+      justify="center">
+      <Grid>
+        <Collapse.Group 
+          accordion={false}>
+          <Collapse title="Q1" expanded>
+            <Text>
+            </Text>
+          </Collapse>
+          <Collapse title="Q2" >
+            <Text>
+            </Text>
+          </Collapse>
+          <Collapse title="Q3" >
+            <Text>
+            </Text>
+          </Collapse>
+        </Collapse.Group>
+      </Grid>
+    </Grid.Container>
+  )
+}
+
 export default function Home() {
   return (
     <>
@@ -224,6 +249,7 @@ export default function Home() {
       <Container 
         gap={0}
         responsive={false}
+        className={ styles.backgroundWrapper }
         fluid>
         <Image
           alt="backrgound"
@@ -235,6 +261,11 @@ export default function Home() {
         />
         <Header />
         <Section />
+      </Container>
+
+      <Container 
+        gap={0}>
+        <QandA />
       </Container>
 
       <Container 
