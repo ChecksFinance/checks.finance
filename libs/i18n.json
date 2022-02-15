@@ -1,0 +1,110 @@
+{
+  "en": {
+    "translation": {
+      "title": "Checks Finance",
+      "description": "Bringing unlimited Web3 products for everyone in the real economy",
+      "coming_soon": "Coming soon",
+      "heading_text": "Bringing unlimited<br /> Web3 products for everyone<br /> in the real economy",
+      "dashboard_btn": "Dashboard",
+      "create_account_btn": "Create an account",
+      "follow_us_btn": "Follow us on Twitter",
+      "follow_us_text": "get to know when we are ready",
+      "find_out_more_btn": "Find out more",
+      "keep_in_touch_text": "Keep in touch",
+      "company_text": "Company",
+      "company_desc": "Checks K.K. is an entity registered in Minato-ku, Tokyo, Japan.",
+      "feature_cards": [
+        {
+          "title": "👩‍💻 Powerful CRM build upon Web3",
+          "description": "We offer a CRM that allows any merchant to issue NFT membership cards and points to their customers at zero cost, with all token available on multiple public chains, such as Ethereum and Polygon. It's the web3 way to maintaining customer relationships."
+        },
+        {
+          "title": "🙈 NFT & everything all in one box",
+          "description": "We support the issuance of NFT and ERC20 tokens, all basic service suites are available out of the box, whether you want to use NFT to manage your membership system or issue point promotions, we support them right out of the box."
+        },
+        {
+          "title": "📱 The best onboarding experience",
+          "description": "Mobile first is our main strategy, through well-designed mobile applications, we are committed to providing our users with a product experience that works like web2. We believe that this will bring everyone into web3."
+        }
+      ],
+      "qa": [
+        {
+          "question": "Q1",
+          "answer": ""
+        }
+      ]
+    }
+  },
+  "zh-CN": {
+    "translation": {
+      "title": "Checks Finance",
+      "description": "使用 Web3 向中小商家注入无限可能",
+      "coming_soon": "即将上线",
+      "heading_text": "使用 Web3<br />向中小商家注入无限可能",
+      "dashboard_btn": "控制台",
+      "create_account_btn": "创建账户",
+      "follow_us_btn": "在 Twitter 上关注我们",
+      "follow_us_text": "在服务上线之前，我们会给您通知",
+      "find_out_more_btn": "了解更多",
+      "keep_in_touch_text": "保持联系",
+      "company_text": "公司信息",
+      "company_desc": "Checks 株式会社是一家在日本东京都港区注册的公司。",
+      "feature_cards": [
+        {
+          "title": "👩‍💻 基于 Web3 构建的强大 CRM",
+          "description": "我们提供的 CRM 允许任何商家以零成本向他们的客户发行 NFT 会员卡和积分 Token，所有代币都可以在多个公有链上使用，如以太坊和 Polygon。欢迎来到客户关系管理系统的 Web3 时代。"
+        },
+        {
+          "title": "🙈 NFT & 诸多服务套件开箱即用",
+          "description": "我们支持NFT和ERC20代币的发行，所有的基本服务套件都是开箱即用，无论你想用NFT来管理你的会员系统还是发行积分促销，我们都支持它们开箱即用。"
+        },
+        {
+          "title": "📱 移动端优先的体验",
+          "description": "移动优先是我们的主要策略，通过精心设计的移动应用，我们致力于为用户提供像 Web2 一样的产品体验，我们相信这将把所有人带入 Web3。"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Q1",
+          "answer": ""
+        }
+      ]
+    }
+  },
+  "ja": {
+    "translation": {
+      "title": "Checks Finance",
+      "description": "リアルエコノミーで、すべての人に無制限のWeb3プロダクトを届ける",
+      "coming_soon": "近日公開予定",
+      "heading_text": "リアルエコノミーで、<br />すべての人に<br />無制限のWeb3プロダクトを届ける",
+      "dashboard_btn": "コンソール",
+      "create_account_btn": "アカウントを作成する",
+      "follow_us_btn": "Twitterでフォローする",
+      "follow_us_text": "サービス開始前にお知らせします",
+      "find_out_more_btn": "詳細はこちら",
+      "keep_in_touch_text": "お問い合わせ",
+      "company_text": "会社情報",
+      "company_desc": "チェクス株式会社は、東京都港区に登記されている会社です。",
+      "feature_cards": [
+        {
+          "title": "👩‍💻 Web3上に構築された強力なCRM",
+          "description": "我们提供的 CRM 允许任何商家以零成本向他们的客户发行 NFT 会员卡和积分 Token，所有代币都可以在多个公有链上使用，如以太坊和 Polygon。欢迎来到客户关系管理系统的 Web3 时代。"
+        },
+        {
+          "title": "🙈 NFT & All in One",
+          "description": "NFTとERC20トークンの発行をサポートしており、基本的なサービス群はすべてそのまま利用可能です。NFTを利用して会員システムを管理したい、ポイントプロモーションを発行したい、といった要望にもすぐに対応できます。"
+        },
+        {
+          "title": "📱 モバイルファースト",
+          "description": "モバイルファーストが私たちの主な戦略です。優れたデザインのモバイルアプリケーションを通じて、ユーザーにWeb2 のように機能する製品体験を提供することを約束します。 これにより、すべての人が Web3 に参加できると信じています。"
+        }
+      ],
+      "qa": [
+        {
+          "question": "Q1",
+          "answer": ""
+        }
+      ]
+    }
+  }
+}

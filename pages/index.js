@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useState, Fragment } from 'react';
 import { 
   Container, 
   Row, 
@@ -17,7 +18,9 @@ import {
   FaTwitter, 
   FaBell,
   FaStore,
+  FaQuestion,
 } from "react-icons/fa";
+import { useTranslation, Trans } from "react-i18next";
 
 import styles from '../styles/Home.module.css'
 import logo from '../public/images/logo.png'
@@ -30,7 +33,25 @@ const _site = {
   description: 'Bringing unlimited Web3 products for everyone in the real economy',
 }
 
+const langsSwitch = [{
+  lng: 'en',
+  label: 'English',
+}, {
+  lng: 'zh-CN',
+  label: '中文',
+}, {
+  lng: 'ja',
+  label: '日本語',
+}]
+
 function Header() {
+  const { t, i18n } = useTranslation()
+  const [currentLang, setCurrentLang] = useState(i18n.language)
+  const changeLanguage = lng => i18n.changeLanguage(lng)
+
+  useEffect(() => 
+    setCurrentLang(i18n.language), [i18n.language])
+
   return (
     <Container 
       fluid 
@@ -46,25 +67,40 @@ function Header() {
               <Image src={logo}
                 width={40}
                 height={40}
-                alt={_site.title} />
+                alt={t('title')} />
               <Text h1
                 className={styles.title}
-                size={30}>{_site.title.toLocaleLowerCase()}</Text>
+                size={30}>{t('title').toLocaleLowerCase()}</Text>
             </Row>
           </Col>
           <Col>
             <Row justify="flex-end" 
               align="center">
+                {
+                  langsSwitch.map(lang => {
+                    return (
+                      <Fragment key={lang.lng}>
+                        <Link onClick={
+                          e => changeLanguage(lang.lng)
+                        }>
+                          <Text b={currentLang === lang.lng}
+                            size={14}>{lang.label}</Text>
+                        </Link>
+                        <Spacer x={1} />
+                      </Fragment>
+                    )
+                  })
+                }
               <Link target={'_blank'}
                 href={'https://twitter.com/checksfinance'}>
                 <FaTwitter fill='#444' size={20} />
               </Link>
               <Spacer x={1} />
               <Tooltip
-                content="Coming Soon"
+                content={ t('coming_soon') }
                 placement="bottom">
                 <Button color="gradient" auto>
-                  Dashboard
+                  {t('dashboard_btn')}
                 </Button>
               </Tooltip>
             </Row>
@@ -76,6 +112,11 @@ function Header() {
 }
 
 function Section() {
+  const { t } = useTranslation();
+  const cards = t('feature_cards', {
+    returnObjects: true
+  })
+
   return (
     <Container 
       className={styles.section}>
@@ -85,7 +126,11 @@ function Section() {
         <Col align="center">
           <Text h2
             className={styles.sectionTitle}
-            size={38}>Bringing unlimited<br /> Web3 products for everyone<br /> in the real economy</Text>
+            size={38}>
+              <Trans i18nKey="heading_text">
+              Bringing unlimited<br /> Web3 products for everyone<br /> in the real economy
+              </Trans>
+            </Text>
         </Col>
       </Row>
       <Spacer y={2} />
@@ -94,13 +139,13 @@ function Section() {
         justify="center">
         <Col align="center">
           <Tooltip
-            content="Coming Soon"
+            content={t('coming_soon')}
             placement="right">
             <Button
               icon={<FaStore />}
               size="lg"
               >
-              Create an account
+              {t('create_account_btn')}
             </Button>
           </Tooltip>
           <Spacer y={.3} />
@@ -110,11 +155,11 @@ function Section() {
               color="primary"
               size="lg"
               icon={<FaBell />}>
-              Follow us on Twitter
+              {t('follow_us_btn')}
             </Button>
           </Link>
           <Text className={styles.notes}
-            size={14}>get to know when we are ready</Text>
+            size={14}>{t('follow_us_text')}</Text>
         </Col>
       </Row>
       <Grid.Container gap={2} justify="center">
@@ -126,48 +171,33 @@ function Section() {
 
       <Spacer y={1} />
 
-      <Grid.Container gap={2} justify="center">
-        <Grid>
-          <Card css={{ mw: "330px" }}>
-            <Text h4>👩‍💻 Powerful CRM build upon Web3</Text>
-            <Text>We offer a CRM that allows any merchant to issue NFT membership cards and points to their customers at zero cost, with all token available on multiple public chains, such as Ethereum and Polygon. It's the web3 way to maintaining customer relationships.</Text>
-            <Card.Footer>
-              <Link color="primary" href="#crm">
-                Find out more
-              </Link>
-            </Card.Footer>
-          </Card>
-        </Grid>
-
-        <Grid>
-          <Card css={{ mw: "330px" }}>
-            <Text h4>🙈 NFT & everything all in one box</Text>
-            <Text>We support the issuance of NFT and ERC20 tokens, all basic service suites are available out of the box, whether you want to use NFT to manage your membership system or issue point promotions, we support them right out of the box.</Text>
-            <Card.Footer>
-              <Link color="primary" href="#nft">
-                Find out more
-              </Link>
-            </Card.Footer>
-          </Card>
-        </Grid>
-
-        <Grid>
-          <Card css={{ mw: "330px" }}>
-            <Text h4>📱 The best onboarding experience</Text>
-            <Text>Mobile first is our main strategy, through well-designed mobile applications, we are committed to providing our users with a product experience that works like web2. We believe that this will bring everyone into web3.</Text>
-            <Card.Footer>
-              <Link color="primary" href="#app">
-                Find out more
-              </Link>
-            </Card.Footer>
-          </Card>
-        </Grid>
+      <Grid.Container gap={2} 
+        justify="center">
+        {
+          cards.map((card, idx) => {
+            return (
+              <Grid key={idx}>
+                <Card css={{ mw: "330px" }}>
+                  <Text h4>{card.title}</Text>
+                  <Text>{card.description}</Text>
+                  <Card.Footer>
+                    <Link color="primary" href="#crm">
+                      {t('find_out_more_btn')}
+                    </Link>
+                  </Card.Footer>
+                </Card>
+              </Grid>
+            )
+          })
+        }
       </Grid.Container>
     </Container>
   )
 }
 
 function Footer () {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <Container className={ styles.footer }>
@@ -176,9 +206,9 @@ function Footer () {
           <Grid md={6} xs={12}>
             <Row>
               <Col>
-                <Text h2
+                <Text h4
                   className={styles.title}
-                  size={30}>{_site.title.toLocaleLowerCase()}</Text>
+                  size={26}>{_site.title.toLocaleLowerCase()}</Text>
                 <Text>contact@checks.finance</Text>
               </Col>
             </Row>
@@ -186,7 +216,7 @@ function Footer () {
           <Grid md={3} xs={12}>
             <Row>
               <Col>
-                <Text h4>Keep in touch</Text>
+                <Text h4>{ t('keep_in_touch_text')}</Text>
                 <Spacer y={.5} />
                 <Link target={'_blank'}
                   href={'https://twitter.com/checksfinance'}>
@@ -199,9 +229,9 @@ function Footer () {
           <Grid md={3} xs={12}>
             <Row>
               <Col>
-                <Text h4>Company</Text>
+                <Text h4>{ t('company_text')}</Text>
                 <Spacer y={.5} />
-                <Text>Checks K.K. is an entity registered in Minato-ku, Tokyo, Japan.</Text>
+                <Text>{ t('company_desc') }</Text>
               </Col>
             </Row>
           </Grid>
@@ -212,24 +242,31 @@ function Footer () {
 }
 
 function QandA() {
+  const { t } = useTranslation();
+  const qa = t('qa', {
+    returnObjects: true
+  })
+
   return (
     <Grid.Container gap={2} 
       justify="center">
       <Grid>
         <Collapse.Group 
           accordion={false}>
-          <Collapse title="Q1" expanded>
-            <Text>
-            </Text>
-          </Collapse>
-          <Collapse title="Q2" >
-            <Text>
-            </Text>
-          </Collapse>
-          <Collapse title="Q3" >
-            <Text>
-            </Text>
-          </Collapse>
+            {
+              qa.map((q, idx) => {
+                return (
+                  <Collapse 
+                    key={idx}
+                    title={q.question} 
+                    expanded={idx===0}>
+                    <Text>
+                      {q.answer}
+                    </Text>
+                  </Collapse>
+                )
+              })
+            }
         </Collapse.Group>
       </Grid>
     </Grid.Container>
