@@ -1,18 +1,16 @@
+import Image from 'next/image';
 import { useEffect, useState, Fragment } from 'react';
 import { useTranslation } from "react-i18next";
-import Image from 'next/image';
-import { 
-  FaTwitter, 
-} from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { 
   Container, 
   Row, 
-  Col, 
   Text,
   Link,
   Tooltip,
   Button,
   Spacer,
+  Grid,
 } from '@nextui-org/react';
 
 import logo from '../../public/images/logo.png'
@@ -33,6 +31,12 @@ export default function Header() {
   const { t, i18n } = useTranslation()
   const [currentLang, setCurrentLang] = useState(i18n.language)
   const changeLanguage = lng => i18n.changeLanguage(lng)
+  const hideInXS = {
+    display: "none",
+    '@sm': {
+      display: 'block'
+    },
+  }
 
   useEffect(() => 
     setCurrentLang(i18n.language), [i18n.language])
@@ -44,10 +48,8 @@ export default function Header() {
       responsive={false}
       className={styles.header}>
       <header>
-        <Row 
-          justify="center"
-          align="center">
-          <Col>
+        <Grid.Container justify="center">
+          <Grid xs={12} sm={6}>
             <Row align="center">
               <Image src={logo}
                 width={40}
@@ -57,40 +59,41 @@ export default function Header() {
                 className={styles.title}
                 size={30}>{t('title').toLocaleLowerCase()}</Text>
             </Row>
-          </Col>
-          <Col>
-            <Row justify="flex-end" 
+          </Grid>
+          <Grid xs={12} sm={6}>
+            <Row justify="flex-end"
               align="center">
-                {
-                  langsSwitch.map(lang => {
-                    return (
-                      <Fragment key={lang.lng}>
-                        <Link onClick={
-                          e => changeLanguage(lang.lng)
-                        }>
-                          <Text b={currentLang === lang.lng}
-                            size={14}>{lang.label}</Text>
-                        </Link>
-                        <Spacer x={1} />
-                      </Fragment>
-                    )
-                  })
-                }
+              {
+                langsSwitch.map(lang => {
+                  return (
+                    <Fragment key={lang.lng}>
+                      <Link onClick={
+                        e => changeLanguage(lang.lng)
+                      }>
+                        <Text b={currentLang === lang.lng}
+                          size={14}>{lang.label}</Text>
+                      </Link>
+                      <Spacer x={1} />
+                    </Fragment>
+                  )
+                })
+              }
               <Link target={'_blank'}
                 href={'https://twitter.com/checksfinance'}>
                 <FaTwitter fill='#444' size={20} />
               </Link>
-              <Spacer x={1} />
+              <Spacer x={1} css={hideInXS} />
               <Tooltip
-                content={ t('coming_soon') }
+                content={t('coming_soon')}
                 placement="bottom">
-                <Button color="gradient" auto>
+                <Button css={hideInXS}
+                  color="gradient" auto>
                   {t('dashboard_btn')}
                 </Button>
               </Tooltip>
             </Row>
-          </Col>
-        </Row>
+          </Grid>
+        </Grid.Container>
       </header>
     </Container>
   )

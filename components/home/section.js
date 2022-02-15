@@ -32,7 +32,6 @@ export default function Section() {
     <Container 
       className={styles.section}>
       <Row align="center" 
-        gap={1}
         justify="center">
         <Col align="center">
           <Text h2
@@ -48,7 +47,6 @@ export default function Section() {
       <Spacer y={2} />
 
       <Row align="center" 
-        gap={1}
         justify="center">
         <Col align="center">
           <Tooltip
@@ -76,33 +74,47 @@ export default function Section() {
         </Col>
       </Row>
 
-      <Grid.Container gap={2} justify="center">
-        <Grid md={5.5} xl={4} sm={7} xs={10}>
-          <Image src={section1}
-            alt="section-banner" />
-        </Grid>
-      </Grid.Container>
-      <Grid.Container gap={2} 
-        justify="center">
-        {
-          cards.map((card, idx) => {
-            return (
-              <Grid key={idx}>
-                <Card css={{ mw: "350px", minHeight: "290px" }}>
-                  <Text h4>{card.title}</Text>
-                  <Spacer y={.5} />
-                  <Text>{card.description}</Text>
-                  <Card.Footer>
-                    <Link color="primary" href={ `#` + anchors[idx]}>
-                      {t('find_out_more_btn')}
-                    </Link>
-                  </Card.Footer>
-                </Card>
-              </Grid>
-            )
-          })
-        }
-      </Grid.Container>
+      <Container gap={1}>
+        <Grid.Container justify="center">
+          <Grid 
+            xl={4} 
+            md={5} 
+            sm={7} 
+            xs={10}>
+            <Image src={section1}
+              alt="section-banner" />
+          </Grid>
+        </Grid.Container>
+      </Container>
+
+      <Container md>
+        <Grid.Container
+          gap={2}
+          justify="center">
+          {
+            cards.map((card, idx) => {
+              return (
+                <Grid
+                  key={idx}>
+                  <Card css={{ 
+                    mw: "350px", 
+                    minHeight: "290px" 
+                  }}>
+                    <Text h4>{card.title}</Text>
+                    <Spacer y={.5} />
+                    <Text>{card.description}</Text>
+                    <Card.Footer>
+                      <Link color="primary" href={`#` + anchors[idx]}>
+                        {t('find_out_more_btn')}
+                      </Link>
+                    </Card.Footer>
+                  </Card>
+                </Grid>
+              )
+            })
+          }
+        </Grid.Container>
+      </Container>
     </Container>
   )
 }

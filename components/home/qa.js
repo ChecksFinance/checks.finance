@@ -29,12 +29,11 @@ export default function QandA() {
   })
 
   return (
-    <Container
-      gap={0}>
+    <Container md
+      gap={1}>
       <Grid.Container
-        gap={5}
         justify="center">
-        <Grid sm={11}>
+        <Grid sm={10.8}>
           <Collapse.Group>
             {
               qa.map((q, idx) => QAItem({
