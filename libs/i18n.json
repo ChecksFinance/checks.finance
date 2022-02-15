@@ -16,21 +16,49 @@
       "feature_cards": [
         {
           "title": "👩‍💻 Powerful CRM build upon Web3",
-          "description": "We offer a CRM that allows any merchant to issue NFT membership cards and points to their customers at zero cost, with all token available on multiple public chains, such as Ethereum and Polygon. It's the web3 way to maintaining customer relationships."
+          "description": "With Checks CRM, any merchant can issue NFT membership cards, universal credits, qualifying promotions to their customers at zero cost. With NFT DIDs, merchants will have stronger connections with consumers than ever before - welcome to the Web3 era of CRM systems."
         },
         {
-          "title": "🙈 NFT & everything all in one box",
-          "description": "We support the issuance of NFT and ERC20 tokens, all basic service suites are available out of the box, whether you want to use NFT to manage your membership system or issue point promotions, we support them right out of the box."
+          "title": "🙈 NFT as a membership card",
+          "description": "We support the issuance of NFT membership cards with enhanced membership points for the ERC20 protocol and offer all customers a powerful DeFi tool with all basic service suites available out of the box and Checks support on several popular public chains, such as Ethereum Layer2 and Polygon."
         },
         {
           "title": "📱 The best onboarding experience",
           "description": "Mobile first is our main strategy, through well-designed mobile applications, we are committed to providing our users with a product experience that works like web2. We believe that this will bring everyone into web3."
         }
       ],
+      "banner1": {
+        "title": "Membership system, reimagined by NFT",
+        "description": "We've been thinking about how NFT will change our lives, not only as an expensive collectible, but as an identity for all of us, and through the NFT membership system offered by Checks, we are truly connecting merchants with consumers. There is no doubt that this is the future of offline commerce and Web3 convergence.<br/><br/>With the NFT DID system we have built, you can post limited promotions, such as promotions for new customers, or loyalty rewards for existing customers, and you can simply use the push functionality we provide to send messages to your customers without relying on third-party social networks. In the future, we will provide online communities for each merchant and bring qualified seeds for your new business. "
+      },
+      "banner2": {
+        "title": "Open and powerful CRM system",
+        "description": "Our powerful CRM system not only issues free NFT cards and on-chain points to your customers, but also increases repeat purchases through a wide range of promotions and enables a more seamless loyalty program than any previous solution. Of course, you can also use the system to issue period-limited digital collectibles, set purchase thresholds, and link to offline events.<br/><br/>Our CRM will provide you with daily reports, monitor changes in in-chain spending behavior, detect medium and long-term discounting metrics, and even provide suggestions for improvements to your loyalty system. In the future, we will support the opening of a fully functional API that will allow existing loyalty and membership systems to access the Web3 world."
+      },
+      "banner3": {
+        "title": "Mobile First",
+        "description": "Mobile first is one of our core strategies, and we are providing all Internet users with a Web3 experience through easy-to-use mobile applications. This will help more people who are interested in Web3 to enter this rich world.<br/><br/>In the Japanese market, we will debut the Checks mobile app in the second half of Q1, supporting your consumers to use the app to create a points wallet, get a free membership card at checkout and accrue points, in addition to supporting some great DeFi feature packs that support point swapping and pledging to help your consumers stay in your loyalty program.<br/><br/>The App will also support your consumers in accessing any digital collectible NFTs issued by you, such as limited stamps and consumer discount coupons. Our goal is to promote this App to all Japanese consumers and to deliver the inclusive value of Web3 to all."
+      },
+      "banner4": {
+        "title": "We choose public networks",
+        "description": "Web3 brings the value network to the Internet, and we believe that in the long run, the economic behavior of all people will be closely integrated with this vast value network.<br/><br/>Therefore, we chose to support an open and decentralized public network instead of building our own private blockchain solution. This means that our customers will have world class protection for their data and asset security. By accessing the open network, we are able to pass on the value of all of our customers ten or even a hundred years down the road without the fear of commercial companies shutting down their networks and causing you and your customers' assets to be compromised.<br/><br/>Through the open network, we offer services that synergize with world-class DEX, such as Uniswap and Multichain protocols, which will undoubtedly further bring long-tail value to our customers."
+      },
       "qa": [
         {
-          "question": "Q1",
-          "answer": ""
+          "question": "Our roadmap is?",
+          "answer": "Checks will debut the App and go live on the test network in the second half of Q1, when Checks CRM will also be available to invited merchants, and in the Q1 MVP release we will support ETH's Layer 2 IMX and Polygon networks."
+        },
+        {
+          "question": "How are Checks charged?",
+          "answer": "Our basic suite of services is free to use, which means you don't need to pay for the use of Checks CRM to connect directly with consumers who use the Check App, making it easy for them to join your loyalty program. ."
+        },
+        {
+          "question": "Checks' R&D team is?",
+          "answer": "We support Checks' services with a small and elite team of global collaborators. The founder of Checks is Guo Yu, an early employee of ByteDance with 11 years of experience in Internet product development."
+        },
+        {
+          "question": "Can I use Checks to distribute NFT collections?",
+          "answer": "You can use the Checks CRM Issue NFT directly as a collector's item, or if you are a trade association or other self-aware organization, it is very easy to use our CRM Issue NFT memorabilia."
         }
       ]
     }
@@ -52,21 +80,49 @@
       "feature_cards": [
         {
           "title": "👩‍💻 基于 Web3 构建的强大 CRM",
-          "description": "我们提供的 CRM 允许任何商家以零成本向他们的客户发行 NFT 会员卡和积分 Token，所有代币都可以在多个公有链上使用，如以太坊和 Polygon。欢迎来到客户关系管理系统的 Web3 时代。"
-        },
-        {
-          "title": "🙈 NFT & 诸多服务套件开箱即用",
-          "description": "我们支持NFT和ERC20代币的发行，所有的基本服务套件都是开箱即用，无论你想用NFT来管理你的会员系统还是发行积分促销，我们都支持它们开箱即用。"
-        },
-        {
+          "description": "使用 Checks CRM，任何商家能以零成本向他们的客户发行 NFT 会员卡、通用积分、限定条件促销活动，通过 NFT DID，商户与消费者建立的联系将比以往任何时代都更加牢固，消费者行为指标也会更加明确与清晰，欢迎来到客户关系管理系统的 Web3 时代。"
+          },
+          {
+          "title": "🙈 作为会员卡的 NFT",
+          "description": "我们支持发行 NFT 会员卡与增强的 ERC20 协议的会员积分，并为所有客户提供强大的 DeFi 工具，所有基本服务套件都能开箱即用，Checks 支持多个流行的公有链，如以太坊 Layer2 与 Polygon。我们会不断拓展网络的边界，提供更多的服务，以支持更多的客户。"
+          },
+          {
           "title": "📱 移动端优先的体验",
-          "description": "移动优先是我们的主要策略，通过精心设计的移动应用，我们致力于为用户提供像 Web2 一样的产品体验，我们相信这将把所有人带入 Web3。"
-        }
+          "description": "移动优先是我们的重要策略，通过精心设计的移动应用，我们致力于为用户提供像 Web2 一样的产品体验，我们相信这是把所有人带入 Web3 世界的最好方式。为此，我们使用 AWS HSM 设计了安全的离线托管钱包服务，支持您的客户使用手机号与邮箱创建积分账户。"
+          }
       ],
+      "banner1": {
+        "title": "充满想象力的 NFT 会员系统",
+        "description": "我们一直在思考 NFT 将如何改变我们的生活，不仅作为价格昂贵的收藏品，更是我们所有人的身份标识，通过 Checks 提供的 NFT 会员系统，我们真正将商户与消费者紧密联系在一起。毫无疑问，这是线下商业与 Web3 相融合的未来。<br/><br/>通过我们构建的 NFT DID 体系，您能发布限定条件的促销活动，譬如针对新客户的促销，或者针对老客户的忠诚度奖励，您可以简单使用我们提供的推送功能向您的客户发送消息，而不依赖第三方社交网络。在未来，我们会为每个商户提供线上社群，并为您的全新事业带来符合条件的种子用户。 "
+      },
+      "banner2": {
+        "title": "开放而强大的 CRM 系统",
+        "description": "我们强大的客户关系管理系统不仅能为您的客户免费发行 NFT 会员卡与链上积分，还能通过五花八门的促销活动提高重复购买率，并实现比以往任何一种解决方案都更完美的忠诚度计划。当然，您也可以通过这一系统发行期间限定的数字收藏品，设置购买门槛，和线下活动进行联动。<br/><br/>我们的CRM 会为您提供每日报表，监控链上消费行为变化，检测中长期贴现指标，甚至能为会员积分系统提供提供改善建议。在未来，我们将支持开放功能完善的 API，使得现有的积分与会员体系也能够接入 Web3 的世界。"
+      },
+      "banner3": {
+        "title": "移动优先",
+        "description": "移动优先是我们最核心的战略之一，通过易用的移动应用程序，我们为所有互联网用户提供 Web3 的使用体验。这将帮助更多对 Web3 感兴趣的人们进入这一丰富多彩的世界。<br/><br/>在日本市场，我们会在 Q1 下旬首发 Checks 的移动应用程序，支持您的消费者使用此款 App 创建积分钱包，在结帐时免费获取会员卡并累计积分，除此之外，我们还将支持一些好用的 DeFi 功能包，支持积分互换与质押，帮助您的消费者留在您的忠诚度计划中。<br/><br/>此款 App 还将支持您的消费者获取由您发行的任何数字收藏品 NFT，譬如限定印章和消费折扣券。我们的目标是将这款 App 推广给所有日本的消费者，将 Web3 的普惠价值传递给所有人。"
+      },
+      "banner4": {
+        "title": "我们选择开放的公共网络",
+        "description": "Web3 将价值网络带入互联网，我们相信，从长远来看，所有人的经济行为都将与这一庞大的价值网络紧密结合。<br/><br/>因此，我们选择支持开放而去中心化的公共网络，而非搭建自己的私有区块链方案。这意味着，我们的客户将会在数据与资产安全上得到世界一流的保护。通过接入开放网络，我们能够将所有客户的价值传递到十年甚至百年之后，而无需担心商业公司关闭他们的网络，导致您和您客户的资产受到损害。<br/><br/>通过开放网络，我们提供的服务能与世界上一流的 DEX 进行协同，比如 Uniswap 和 Multichain 协议，毫无疑问，这将进一步为我们的客户带来长尾价值。"
+      },
       "qa": [
         {
-          "question": "Q1",
-          "answer": ""
+          "question": "我们的开发计划是？",
+          "answer": "Checks 将在 Q1 下旬首发 App，并上线测试网络，届时，Checks CRM 也将开放给受邀请的商户使用，在 Q1 的 MVP 版本中，我们将支持 ETH 的 Layer 2 IMX 与 Polygon 网络。"
+        },
+        {
+          "question": "Checks 如何收费？",
+          "answer": "我们的基础服务套件免费提供给用户使用，这意味着，您不需要为使用 Checks CRM 付费，便够直接与使用 Check App 的消费者产生联系，让他们轻松地加入您的忠诚度计划。Checks 会在 Q2 中旬提供高级套件与服务包，这些增值服务会帮助您与您的客户建立更加深刻的联系。"
+        },
+        {
+          "question": "Checks 的研发团队是？",
+          "answer": "我们通过全球协作的小型精英团队为 Checks 的服务提供支持，Checks 的创始人是字节跳动早期员工郭宇，有着 11 年互联网产品研发经验。"
+        },
+        {
+          "question": "我是否能使用 Checks 发行 NFT 收藏品？",
+          "answer": "您可以直接使用 Checks CRM 发行 NFT 作为收藏品，如果您是行业协会或者其他自知组织，也可以非常方便地使用我们的 CRM 发行 NFT 纪念品。"
         }
       ]
     }
@@ -88,21 +144,49 @@
       "feature_cards": [
         {
           "title": "👩‍💻 Web3上に構築された強力なCRM",
-          "description": "我们提供的 CRM 允许任何商家以零成本向他们的客户发行 NFT 会员卡和积分 Token，所有代币都可以在多个公有链上使用，如以太坊和 Polygon。欢迎来到客户关系管理系统的 Web3 时代。"
+          "description": "チェクスCRMを使えば、どの加盟店もNFT会員カード、ポイント、適格プロモーションを顧客にゼロコストで発行することができ、NFT DIDを使えば、加盟店はこれまで以上に消費者と強いつながりを持つことができる。Web3時代の顧客関係管理システムにようこそ"
         },
         {
-          "title": "🙈 NFT & All in One",
-          "description": "NFTとERC20トークンの発行をサポートしており、基本的なサービス群はすべてそのまま利用可能です。NFTを利用して会員システムを管理したい、ポイントプロモーションを発行したい、といった要望にもすぐに対応できます。"
+          "title": "🙈 会員証としてのNFT",
+          "description": "ERC20 の会員ポイントを強化したNFT会員証の発行をサポートし、すべての基本サービススイートをすぐに利用でき、Ethereum Layer2 や Polygon など、いくつかの人気の高いパブリックチェーンでチェクスをサポートする強力なDeFiツールをすべてのお客様に提供します。"
         },
         {
           "title": "📱 モバイルファースト",
           "description": "モバイルファーストが私たちの主な戦略です。優れたデザインのモバイルアプリケーションを通じて、ユーザーにWeb2 のように機能する製品体験を提供することを約束します。 これにより、すべての人が Web3 に参加できると信じています。"
         }
       ],
+      "banner1": {
+        "title": "NFTの想像力豊かな会員制度",
+        "description": "高価なコレクターズアイテムとしてだけでなく、私たち全員のアイデンティティとして、NFTがどのように生活を変えていくのかを考え、チェックスが提供するNFT会員システムによって、まさにマーチャントとコンシューマーを結びつけていくのです。 オフラインコマースとWeb3.0が融合した未来であることは間違いないでしょう。<br/><br/>私たちが構築したNFT DIDシステムでは、新規顧客向けのプロモーションや既存顧客向けのポイント還元など、適格なプロモーションを開始することができ、第三者のSNSに頼ることなく、私たちが提供するプッシュ機能を使って簡単にメッセージを送信することができます。 将来的には、各加盟店のオンラインコミュニティを提供し、新規事業のための適格なシーズを取り込んでいく予定です。 "
+      },
+      "banner2": {
+        "title": "オープンでパワフルなCRMシステム",
+        "description": "当社の強力なCRMシステムは、お客様に無料のNFTカードやオンチェーンポイントを発行するだけでなく、さまざまなプロモーションを通じてリピート購入を増やし、これまでのどのソリューションよりもシームレスなロイヤルティプログラムを実現します。 もちろん、期間限定のデジタルグッズを発行したり、購入のしきい値を設定したり、オフラインのイベントと連動させたりすることも可能です。<br/><br/>私たちのCRMは、デイリーレポートを提供し、チェーンに沿った消費行動の変化を監視し、中長期的な割引の指標をチェックし、さらにロイヤルティシステムの改善を提案します。 将来的には、既存のポイントシステムや会員制システムがWeb3の世界にもアクセスできるよう、フル機能のAPI公開をサポートする予定です。"
+      },
+      "banner3": {
+        "title": "モバイルファースト",
+        "description": "モバイルファーストは当社のコア戦略の一つであり、使いやすいモバイルアプリケーションを通じて、すべてのインターネットユーザーにWeb3体験を提供しています。 これにより、Web3に興味を持つより多くの人が、この豊かな世界にアクセスすることができるようになるのです。<br/><br/>日本市場では、第1四半期後半にChecksモバイルアプリをデビューさせ、アプリを使ってポイントウォレットを作成し、会計時に無料の会員カードを入手し、ポイントを貯めることをサポートします。さらに、ポイント交換や誓約書をサポートするいくつかの素晴らしいDeFi機能パックをサポートし、貴社のロイヤルティプログラムに顧客が留まるよう支援します。<br/><br/>また、アプリを利用することで、限定スタンプや消費者割引券など、貴社が発行するデジタルコレクター向けNFTにアクセスできるようになります。 私たちは、このアプリを日本のすべての消費者に普及させ、Web3の包括的な価値をすべての人に届けることを目標としています。"
+      },
+      "banner4": {
+        "title": "私たちは、オープンなパブリックネットワークを選択します",
+        "description": "Web3はインターネットにバリューネットワークをもたらし、長期的にはすべての人々の経済行動がこの広大なバリューネットワークと密接に関連することになると考えています。<br/><br/>そのため、私たちは独自のプライベートなブロックチェーンソリューションを構築するのではなく、オープンで分散化されたパブリックネットワークをサポートすることを選択しました。 つまり、お客様のデータと資産のセキュリティに対して、世界最高水準の保護を提供することができるのです。 オープンネットワークにアクセスできることで、営利企業がネットワークを遮断し、お客様やお客様の資産が危険にさらされる心配もなく、10年、100年とすべてのお客様の価値を継承していくことができます。<br/><br/>オープンネットワークを通じて、UniswapやMultichainプロトコルなど、世界トップレベルのDEXと相乗効果のあるサービスを提供し、お客様にさらなるロングテール価値をもたらすことは間違いないでしょう。"
+      },
       "qa": [
         {
-          "question": "Q1",
-          "answer": ""
+          "question": "開発計画について教えてください。",
+          "answer": "Checksは、第1四半期後半にアプリをデビューさせ、テストネットワーク上で稼働させます。このとき、Checks CRMも招待された加盟店に提供され、第1四半期のMVPリリースでは、ETHのレイヤー2 IMXとポリゴンネットワークをサポートする予定です。"
+        },
+        {
+          "question": "課金方法について教えてください。",
+          "answer": "当社の基本サービス群は無料でご利用いただけます。つまり、Checks CRMの使用料を支払うことなく、Checks Appを使用して消費者と直接つながり、消費者が貴社のポイントプログラムに参加しやすくなるのです。"
+        },
+        {
+          "question": "当社の研究開発チームは?",
+          "answer": "私たちは、少数精鋭のグローバルな協力体制でChecksのサービスをサポートしており、Checksの創業者は、バイトダンス(ByteDance Inc.) の初期社員でインターネット製品開発で11年の経験を持つ郭宇（カク　ウ）氏です。"
+        },
+        {
+          "question": "Checksを使用してNFTコレクションを分配することはできますか？",
+          "answer": "Checks CRMイシューNFTをそのままコレクターズアイテムとしてお使いいただくこともできますし、業界団体などの自認する団体であれば、当社のCRMイシューNFTの記念品として非常に使い勝手がよいでしょう。"
         }
       ]
     }

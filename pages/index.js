@@ -27,6 +27,9 @@ import logo from '../public/images/logo.png'
 import backgroundImage from '../public/images/background.png'
 import backgroundWaves from '../public/images/wave.png'
 import section1 from '../public/images/section1-bg.png'
+import banner1 from '../public/images/banner1.png'
+import banner2 from '../public/images/banner2.png'
+import banner3 from '../public/images/banner3.png'
 
 const _site = {
   title: 'Checks Finance',
@@ -116,6 +119,7 @@ function Section() {
   const cards = t('feature_cards', {
     returnObjects: true
   })
+  const anchors = ['crm', 'nft', 'mobile-first']
 
   return (
     <Container 
@@ -168,20 +172,18 @@ function Section() {
             alt="section-banner" />
         </Grid>
       </Grid.Container>
-
-      <Spacer y={1} />
-
       <Grid.Container gap={2} 
         justify="center">
         {
           cards.map((card, idx) => {
             return (
               <Grid key={idx}>
-                <Card css={{ mw: "330px" }}>
+                <Card css={{ mw: "350px", minHeight: "290px" }}>
                   <Text h4>{card.title}</Text>
+                  <Spacer y={.5} />
                   <Text>{card.description}</Text>
                   <Card.Footer>
-                    <Link color="primary" href="#crm">
+                    <Link color="primary" href={ `#` + anchors[idx]}>
                       {t('find_out_more_btn')}
                     </Link>
                   </Card.Footer>
@@ -210,6 +212,8 @@ function Footer () {
                   className={styles.title}
                   size={26}>{_site.title.toLocaleLowerCase()}</Text>
                 <Text>contact@checks.finance</Text>
+                <Spacer y={10} />
+                <Text color='#efefef'>&copy; 2022 Checks Finance K.K.</Text>
               </Col>
             </Row>
           </Grid>
@@ -248,28 +252,120 @@ function QandA() {
   })
 
   return (
-    <Grid.Container gap={2} 
+    <Grid.Container gap={5} 
       justify="center">
-      <Grid>
-        <Collapse.Group 
-          accordion={false}>
-            {
-              qa.map((q, idx) => {
-                return (
-                  <Collapse 
-                    key={idx}
-                    title={q.question} 
-                    expanded={idx===0}>
-                    <Text>
-                      {q.answer}
-                    </Text>
-                  </Collapse>
-                )
-              })
-            }
+      <Grid sm={11}>
+        <Collapse.Group>
+          {
+            qa.map((q, idx) => {
+              return (
+                <Collapse
+                  key={idx}
+                  title={q.question}
+                  expanded={idx === 0}>
+                  <Text>
+                    {q.answer}
+                  </Text>
+                </Collapse>
+              )
+            })
+          }
         </Collapse.Group>
       </Grid>
     </Grid.Container>
+  )
+}
+
+function Features() {
+  const { t } = useTranslation();
+
+  return (
+    <>
+    <Grid.Container gap={6}
+      id="nft"
+      className={styles.featureSection}
+      alignItems="center"
+      justify="center">
+        <Grid sm={5}>
+          <Image src={banner1}
+            alt="section-banner-2" />
+        </Grid>
+        <Grid sm={6}>
+          <Card bordered shadow={false}>
+            <Text h3 size={30} className={styles.sectionTitle}>{t('banner1.title')}</Text>
+            <Spacer y={.8} />
+            <Text>
+              <Trans i18nKey="banner1.description">
+              </Trans>
+            </Text>
+          </Card>
+        </Grid>
+    </Grid.Container> 
+
+    <Grid.Container gap={8} 
+      id="crm"
+      className={styles.featureSection}
+      alignItems="center"
+      justify="center">
+      <Grid sm={6}>
+          <Card bordered shadow={false}>
+            <Text h3 size={30} className={styles.sectionTitle}>{t('banner2.title')}</Text>
+            <Spacer y={.8} />
+            <Text>
+              <Trans i18nKey="banner2.description">
+              </Trans>
+            </Text>
+          </Card>
+      </Grid>
+      <Grid sm={5}>
+        <Image src={banner2}
+          alt="section-banner-3" />
+      </Grid>
+    </Grid.Container> 
+
+    <Grid.Container gap={8} 
+        id="mobile-first"
+      className={styles.featureSection}
+      alignItems="center"
+      justify="center">
+      <Grid sm={5}>
+        <Image src={banner3}
+          alt="section-banner-4" />
+      </Grid>
+      <Grid sm={6}>
+          <Card bordered shadow={false}>
+            <Text h3 size={30} className={styles.sectionTitle}>{t('banner3.title')}</Text>
+            <Spacer y={.8} />
+            <Text>
+              <Trans i18nKey="banner3.description">
+              </Trans>
+            </Text>
+          </Card>
+        </Grid>
+    </Grid.Container> 
+
+    <Grid.Container gap={8}
+        id="public-networks"
+        className={styles.featureSection}
+        alignItems="center"
+        justify="center">
+        <Grid sm={6}>
+          <Card bordered shadow={false}>
+            <Text h3 size={30} className={styles.sectionTitle}>{t('banner4.title')}</Text>
+            <Spacer y={.8} />
+            <Text>
+              <Trans i18nKey="banner4.description">
+              </Trans>
+            </Text>
+          </Card>
+        </Grid>
+        <Grid sm={5}>
+          <Image src={banner3}
+            alt="section-banner-4" />
+        </Grid>
+      </Grid.Container> 
+    <Spacer y={3} />
+    </>
   )
 }
 
@@ -297,6 +393,11 @@ export default function Home() {
         />
         <Header />
         <Section />
+      </Container>
+
+      <Container 
+        gap={0}>
+        <Features />
       </Container>
 
       <Container 

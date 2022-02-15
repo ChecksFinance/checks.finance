@@ -18,6 +18,10 @@
   padding: 4em 0;
 }
 
+.featureSection {
+  border-bottom: 1px dashed #ddd;
+}
+
 .sectionTitle {
   font-family: fot-tsukuardgothic-std, sans-serif;
   font-style: normal;
