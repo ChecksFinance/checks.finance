@@ -46,7 +46,7 @@ export default function Footer () {
                     size={26}>checks finance</Text>
                   <Text>contact@checks.finance</Text>
                   <Spacer y={10} />
-                  <Text color='#efefef'>&copy; 2022 Checks Finance K.K.</Text>
+                  <Text>&copy; 2022 Checks Finance K.K.</Text>
                 </Col>
               </Row>
             </Grid>
@@ -76,6 +76,5 @@ export default function Footer () {
         </Container>
       </footer>
     </Container>
-
   )
 }

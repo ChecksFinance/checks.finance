@@ -78,8 +78,8 @@ export default function Section() {
         <Grid.Container justify="center">
           <Grid 
             xl={4} 
-            md={5} 
-            sm={7} 
+            md={6} 
+            sm={8} 
             xs={10}>
             <Image src={section1}
               alt="section-banner" />
