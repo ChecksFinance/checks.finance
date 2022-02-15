@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import { 
   Grid,
   Text,
   Spacer,
   Card,
+  Container,
 } from '@nextui-org/react';
 import { useTranslation, Trans } from "react-i18next";
 

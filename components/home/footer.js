@@ -8,6 +8,9 @@ import {
   Link,
   Spacer,
 } from '@nextui-org/react';
+import { 
+  FaTwitter,
+} from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 import styles from '../../styles/Home.module.css'
@@ -40,7 +43,7 @@ export default function Footer () {
                 <Col>
                   <Text h4
                     className={styles.title}
-                    size={26}>{_site.title.toLocaleLowerCase()}</Text>
+                    size={26}>checks finance</Text>
                   <Text>contact@checks.finance</Text>
                   <Spacer y={10} />
                   <Text color='#efefef'>&copy; 2022 Checks Finance K.K.</Text>

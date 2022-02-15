@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { 
   Container, 
   Row, 
@@ -6,6 +7,9 @@ import {
   Text,
   Link,
   Spacer,
+  Tooltip,
+  Button,
+  Card,
 } from '@nextui-org/react';
 import { useTranslation, Trans } from "react-i18next";
 import { 
