@@ -17,10 +17,15 @@ import banner4 from '../../public/images/banner4.png'
 
 export default function Features() {
   const { t, i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState(i18n.language)
+  const [textClass, setTextClass] = useState('')
 
-  useEffect(() => 
-    setCurrentLang(i18n.language), [i18n.language])
+  useEffect(() => {
+    setTextClass(
+      i18n.language !== 'zh-CN' ? 
+        'sectionTitle' :
+        ''
+    )
+  }, [i18n.language])
 
   return (
     <Container 
@@ -41,7 +46,7 @@ export default function Features() {
             <Card shadow={false}>
               <Text h3 
                 size={38} 
-                className={currentLang !== 'zh-CN' ? styles.sectionTitle: ''}
+                className={styles[textClass]}
               >{t('banner1.title')}</Text>
               <Spacer y={.8} />
               <Text>
@@ -61,7 +66,7 @@ export default function Features() {
           <Grid sm={5} xs={11} >
             <Card shadow={false}>
               <Text h3 size={38} 
-                className={currentLang !== 'zh-CN' ? styles.sectionTitle : ''}
+                className={styles[textClass]}
               >{t('banner2.title')}</Text>
               <Spacer y={.8} />
               <Text>
@@ -91,7 +96,7 @@ export default function Features() {
           <Grid sm={5} xs={11}>
             <Card shadow={false}>
               <Text h3 size={38} 
-                className={currentLang !== 'zh-CN' ? styles.sectionTitle : ''}
+                className={styles[textClass]}
                 >{t('banner3.title')}</Text>
               <Spacer y={.8} />
               <Text>
@@ -111,7 +116,7 @@ export default function Features() {
           <Grid sm={5} xs={11}>
             <Card shadow={false}>
               <Text h3 size={38} 
-                className={currentLang !== 'zh-CN' ? styles.sectionTitle : ''}
+                className={styles[textClass]}
               >{t('banner4.title')}</Text>
               <Spacer y={.8} />
               <Text>

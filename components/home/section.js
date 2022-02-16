@@ -80,7 +80,7 @@ export default function Section() {
             xl={4} 
             md={6} 
             sm={8} 
-            xs={10}>
+            xs={11}>
             <Image src={section1}
               alt="section-banner" />
           </Grid>
@@ -97,8 +97,10 @@ export default function Section() {
                 <Grid
                   key={idx}>
                   <Card css={{ 
-                    mw: "350px", 
-                    minHeight: "290px" 
+                    "@sm": {
+                      minHeight: "290px",
+                      mw: "350px", 
+                    }
                   }}>
                     <Text h4>{card.title}</Text>
                     <Spacer y={.5} />
