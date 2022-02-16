@@ -71,10 +71,12 @@ export default function Header() {
             <Row 
               css={{
                 justifyContent: 'center',
-                borderTop: '1px solid #efefef',
+                marginTop: '10px',
+                borderTop: '1px solid #fff',
                 '@sm': {
                   justifyContent: 'flex-end',
                   borderTop: 'none',
+                  marginTop: 0,
                 }
               }}
               align="center">

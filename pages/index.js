@@ -35,7 +35,7 @@ export default function Home() {
           src={backgroundImage}
           layout="fill"
           objectFit="cover"
-          objectPosition="center top"
+          objectPosition="left top"
           quality={100}
         />
         <Header />
