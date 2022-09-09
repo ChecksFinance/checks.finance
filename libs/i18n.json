@@ -12,7 +12,9 @@
       "find_out_more_btn": "Find out more",
       "keep_in_touch_text": "Keep in touch",
       "company_text": "Company",
-      "company_desc": "Checks K.K. is an entity registered in Minato-ku, Tokyo, Japan.",
+      "company_name": "チェックス株式会社",
+      "company_addr": "Address: 106-0044 東京都港区東麻布2-35-1 KCビル 6F 19号室",
+      "company_cap": "Capital: 9,000,000 JPY",
       "feature_cards": [
         {
           "title": "👩‍💻 Powerful CRM build upon Web3",
@@ -76,20 +78,22 @@
       "find_out_more_btn": "了解更多",
       "keep_in_touch_text": "保持联系",
       "company_text": "公司信息",
-      "company_desc": "Checks 株式会社是一家在日本东京都港区注册的公司。",
+      "company_name": "チェックス株式会社",
+      "company_addr": "地址: 106-0044 東京都港区東麻布2-35-1 KCビル 6F 19号室",
+      "company_cap": "資本金: 900万円",
       "feature_cards": [
         {
           "title": "👩‍💻 基于 Web3 构建的强大 CRM",
           "description": "使用 Checks CRM，任何商家能以零成本向他们的客户发行 NFT 会员卡、通用积分、限定条件促销活动，通过 NFT DID，商户与消费者建立的联系将比以往任何时代都更加牢固，消费者行为指标也会更加明确与清晰，欢迎来到客户关系管理系统的 Web3 时代。"
-          },
-          {
+        },
+        {
           "title": "🙈 作为会员卡的 NFT",
           "description": "我们支持发行 NFT 会员卡与增强的 ERC20 协议的会员积分，并为所有客户提供强大的 DeFi 工具，所有基本服务套件都能开箱即用，Checks 支持多个流行的公有链，如以太坊 Layer2 与 Polygon。我们会不断拓展网络的边界，提供更多的服务，以支持更多的客户。"
-          },
-          {
+        },
+        {
           "title": "📱 移动端优先的体验",
           "description": "移动优先是我们的重要策略，通过精心设计的移动应用，我们致力于为用户提供像 Web2 一样的产品体验，我们相信这是把所有人带入 Web3 世界的最好方式。为此，我们使用 AWS HSM 设计了安全的离线托管钱包服务，支持您的客户使用手机号与邮箱创建积分账户。"
-          }
+        }
       ],
       "banner1": {
         "title": "充满想象力的 NFT 会员系统",
@@ -140,7 +144,9 @@
       "find_out_more_btn": "詳細はこちら",
       "keep_in_touch_text": "お問い合わせ",
       "company_text": "会社情報",
-      "company_desc": "チェクス株式会社は、東京都港区に登記されている会社です。",
+      "company_name": "チェックス株式会社",
+      "company_addr": "住所: 106-0044 東京都港区東麻布2-35-1 KCビル 6F 19号室",
+      "company_cap": "資本金: 900万円",
       "feature_cards": [
         {
           "title": "👩‍💻 Web3上に構築された強力なCRM",

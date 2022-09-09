@@ -1,22 +1,20 @@
-import Image from 'next/image'
-import { 
-  Container, 
-  Row, 
-  Col, 
+import Image from "next/image";
+import {
+  Container,
+  Row,
+  Col,
   Grid,
   Text,
   Link,
   Spacer,
-} from '@nextui-org/react';
-import { 
-  FaTwitter,
-} from "react-icons/fa";
+} from "@nextui-org/react";
+import { FaTwitter } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
-import styles from '../../styles/Home.module.css'
-import backgroundWaves from '../../public/images/wave.png'
+import styles from "../../styles/Home.module.css";
+import backgroundWaves from "../../public/images/wave.png";
 
-export default function Footer () {
+export default function Footer() {
   const { t } = useTranslation();
 
   return (
@@ -24,7 +22,8 @@ export default function Footer () {
       gap={0}
       className={styles.backgroundWrapper}
       responsive={false}
-      fluid>
+      fluid
+    >
       <Image
         alt="backrgound footer"
         src={backgroundWaves}
@@ -41,9 +40,9 @@ export default function Footer () {
             <Grid md={6} xs={12}>
               <Row>
                 <Col>
-                  <Text h4
-                    className={styles.title}
-                    size={26}>checks finance</Text>
+                  <Text h4 className={styles.title} size={26}>
+                    checks finance
+                  </Text>
                   <Text>contact@checks.finance</Text>
                   <Spacer y={10} />
                   <Text>&copy; 2022 Checks Finance K.K.</Text>
@@ -53,11 +52,13 @@ export default function Footer () {
             <Grid md={3} xs={12}>
               <Row>
                 <Col>
-                  <Text h4>{t('keep_in_touch_text')}</Text>
-                  <Spacer y={.5} />
-                  <Link target={'_blank'}
-                    href={'https://twitter.com/checksfinance'}>
-                    <FaTwitter fill='#444' size={20} />
+                  <Text h4>{t("keep_in_touch_text")}</Text>
+                  <Spacer y={0.5} />
+                  <Link
+                    target={"_blank"}
+                    href={"https://twitter.com/checksfinance"}
+                  >
+                    <FaTwitter fill="#444" size={20} />
                     <Text>@checksfinance</Text>
                   </Link>
                 </Col>
@@ -66,9 +67,11 @@ export default function Footer () {
             <Grid md={3} xs={12}>
               <Row>
                 <Col>
-                  <Text h4>{t('company_text')}</Text>
-                  <Spacer y={.5} />
-                  <Text>{t('company_desc')}</Text>
+                  <Text h4>{t("company_text")}</Text>
+                  <Spacer y={0.5} />
+                  <Text>{t("company_name")}</Text>
+                  <Text>{t("company_addr")}</Text>
+                  <Text>{t("company_cap")}</Text>
                 </Col>
               </Row>
             </Grid>
@@ -76,5 +79,5 @@ export default function Footer () {
         </Container>
       </footer>
     </Container>
-  )
+  );
 }
