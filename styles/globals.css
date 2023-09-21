@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .blink-cursor {
+    animation: cursor 1s infinite;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   /* brand colors */
-  --brand: 39, 185, 139;
-  --gray-1: 36, 36, 36;
-  --gray-2: 102, 102, 102;
-  --gray-3: 176, 176, 176;
+  --brand: 39 185 139;
+  --gray-1: 36 36 36;
+  --gray-2: 102 102 102;
+  --gray-3: 176 176 176;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   color: white;
-  background: rgb(var(--brand));
+  /* background: rgb(var(--brand)); */
+  background: white;
 }

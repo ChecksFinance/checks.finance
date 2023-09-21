@@ -1,19 +1,33 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter, Noto_Sans_JP } from 'next/font/google'
 import { FC, ReactNode } from 'react'
 import MdxPage from './mdx.mdx'
 import { Nav } from '@/components/Nav'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+import { GetStaticProps, GetStaticPropsResult } from 'next'
+import { HeroSection } from '@/components/HeroSection'
 
 const inter = Inter({ subsets: ['latin'] })
+const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen w-screen flex-col items-stretch justify-start ${inter.className}`}>
-      <Nav />
+    <main className={`flex min-h-screen w-screen flex-col items-stretch justify-start ${notoSansJp.className}`}>
+      <section className="h-screen bg-[rgb(var(--brand))] flex flex-col">
+        <Nav />
+        <HeroSection />
+      </section>
+      <section className="bg-white h-screen"></section>
     </main>
   )
 }
 
-// const Layout: FC<{ children: ReactNode }> = ({ children }) => {
-//   return <div className="bg-slate-500 text-lg">{children}</div>;
-// };
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en')),
+      // Will be passed to the page component as props
+    },
+  }
+}
