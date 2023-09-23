@@ -42,7 +42,7 @@ export const Typewriter: FC = () => {
   }, [])
 
   return (
-    <div className="text-[32px] opacity-80 text-white flex align-middle leading-tight">
+    <div className="sm:text-[32px] text-[26px] opacity-80 text-white flex align-middle leading-tight">
       <span>{text}</span>
       <Cursor />
       <span className="">情報</span>

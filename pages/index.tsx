@@ -10,21 +10,24 @@ import { HeroSection } from '@/components/HeroSection'
 import { EnbunIntro } from '@/components/EnbunIntro'
 import { ProductIntro } from '@/components/ProductIntro'
 import { CompanyIntro } from '@/components/CompanyIntro'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen w-screen flex-col items-stretch justify-start ${notoSansJp.className}`}>
-      <section className="h-screen bg-[rgb(var(--brand))] flex flex-col">
+    <main
+      className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip ${notoSansJp.className}`}
+    >
+      <section className="sm:h-screen bg-[rgb(var(--brand))] flex flex-col">
         <Nav />
         <HeroSection />
       </section>
       <EnbunIntro />
       <ProductIntro />
       <CompanyIntro />
-      <section className="bg-white h-screen"></section>
+      <Footer />
     </main>
   )
 }

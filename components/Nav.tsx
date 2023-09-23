@@ -5,6 +5,7 @@ import Cookies from 'js-cookie'
 import logo from '@/public/images/logo.svg'
 import Image from 'next/image'
 import { UseTranslation, useTranslation } from 'next-i18next'
+import Logo from '@/components/Icons/Logo'
 
 export const Nav: FC = () => {
   const router = useRouter()
@@ -13,12 +14,10 @@ export const Nav: FC = () => {
 
   // const otherLocales = (locales || []).filter((locale) => locale !== activeLocale)
   return (
-    <nav className="h-[88px] flex items-center justify-between px-[64px]">
-      <div className="w-[121.5px] h-[28px] relative flex-shrink-0">
-        <Image src={logo} alt="Checks" />
-      </div>
-      <div className="flex-1 flex justify-center mx-[15px]">
-        <ul className="flex gap-[clamp(5px,2vw,3rem)] text-[18px] [&>li]:whitespace-nowrap font-medium">
+    <nav className="h-[88px] flex items-center justify-between sm:px-[64px] px-[20px]">
+      <Logo className="w-[121.5px] h-[28px] flex-shrink-0" />
+      <div className="hidden flex-1 md:flex justify-center px-[20px]">
+        <ul className="flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px]">
           <li>製品·サービス一覧</li>
           <li>会社概要</li>
           <li>ブログ</li>
