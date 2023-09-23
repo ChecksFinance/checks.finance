@@ -7,6 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import { GetStaticProps, GetStaticPropsResult } from 'next'
 import { HeroSection } from '@/components/HeroSection'
+import { EnbunIntro } from '@/components/EnbunIntro'
 
 const inter = Inter({ subsets: ['latin'] })
 const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
@@ -18,6 +19,7 @@ export default function Home() {
         <Nav />
         <HeroSection />
       </section>
+      <EnbunIntro />
       <section className="bg-white h-screen"></section>
     </main>
   )

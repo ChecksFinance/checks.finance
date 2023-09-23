@@ -14,6 +14,9 @@ const config: Config = {
       },
       colors: {
         brand: 'rgb(var(--brand) / <alpha-value>)',
+        gray1: 'rgb(var(--gray-1) / <alpha-value>)',
+        gray2: 'rgb(var(--gray-2) / <alpha-value>)',
+        gray3: 'rgb(var(--gray-3) / <alpha-value>)',
       },
     },
   },

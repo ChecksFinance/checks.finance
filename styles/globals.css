@@ -25,9 +25,9 @@
   --background-end-rgb: 255, 255, 255;
   /* brand colors */
   --brand: 39 185 139;
-  --gray-1: 36 36 36;
-  --gray-2: 102 102 102;
-  --gray-3: 176 176 176;
+  --gray-1: 32 38 44;
+  --gray-2: 167 172 180;
+  --gray-3: 52 58 66;
 }
 
 body {
