@@ -9,7 +9,7 @@ import cn from '@/utils/merge'
 
 export const ProductIntro: FC = () => {
   return (
-    <div className="leading-none ">
+    <div className="leading-none" id="product-intro">
       <div className="bg-[rgb(242_244_245/0.32)]  pt-[120px] pb-[100px]  px-[20px] sm:px-[60px]">
         <SectionHeader
           h1={'製品紹介'}

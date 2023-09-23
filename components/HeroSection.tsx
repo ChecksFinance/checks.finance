@@ -7,7 +7,7 @@ export const HeroSection: FC = () => {
   return (
     <div className="flex-1 flex flex-col relative">
       <div className="flex-1"></div>
-      <div className="flex flex-col items-center max-sm:mt-[32px]">
+      <div className="flex flex-col items-center max-sm:mt-[32px] z-10">
         <h1 className="sm:text-[54px] text-[34px] font-semibold mb-[10px]">自分でデータを売る</h1>
         <Typewriter />
         <button className="mt-[36px] mb-[32px] text-[20px] font-medium text-brand px-[80px] py-[16px] bg-white rounded-[8px]  hover:bg-[color:#334952] hover:text-white">
@@ -15,8 +15,8 @@ export const HeroSection: FC = () => {
         </button>
       </div>
       <div className="flex-[5]"></div>
-      <div className="sm:absolute bottom-0 left-0 right-0 w-sr md:w-[clamp(768px,70vw,100vw)] mx-auto max-sm:flex max-sm:items-end max-sm:aspect-[2.24_/_1]">
-        <Image src={illustration} alt="illustration" />
+      <div className="flex items-end sm:absolute bottom-0 left-0 right-0 mx-auto  ">
+        <Image src={illustration} alt="illustration" className="mx-auto" />
       </div>
     </div>
   )
