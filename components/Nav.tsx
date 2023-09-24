@@ -26,7 +26,9 @@ export const Nav: FC = () => {
         <ul className="flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px] [&>li]:cursor-pointer">
           <li onClick={() => handleScrollTo('#product-intro')}>製品·サービス一覧</li>
           <li onClick={() => handleScrollTo('#company-intro')}>会社概要</li>
-          <li>ブログ</li>
+          <Link href="/pages">
+            <li>ブログ</li>
+          </Link>
         </ul>
       </div>
       <div>JP</div>

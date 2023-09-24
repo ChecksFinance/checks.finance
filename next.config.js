@@ -9,7 +9,7 @@ const withMDX = require('@next/mdx')({
     remarkPlugins: [],
     rehypePlugins: [],
     // If you use `MDXProvider`, uncomment the following line.
-    // providerImportSource: "@mdx-js/react",
+    providerImportSource: '@mdx-js/react',
   },
 })
 
@@ -17,7 +17,7 @@ const withMDX = require('@next/mdx')({
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  i18n,
+  // i18n,
 }
 
 module.exports = withMDX(nextConfig)
