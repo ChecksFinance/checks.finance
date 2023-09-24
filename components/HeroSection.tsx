@@ -5,7 +5,7 @@ import { Typewriter } from '@/components/Typewriter'
 
 export const HeroSection: FC = () => {
   return (
-    <div className="flex-1 flex flex-col relative">
+    <div className="flex-1 flex flex-col relative text-white">
       <div className="flex-1"></div>
       <div className="flex flex-col items-center max-sm:mt-[32px] z-10">
         <h1 className="sm:text-[54px] text-[34px] font-semibold mb-[10px]">自分でデータを売る</h1>

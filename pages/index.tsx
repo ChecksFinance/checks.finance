@@ -17,18 +17,17 @@ const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
+    <div
       className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip ${notoSansJp.className}`}
     >
       <section className="sm:h-screen bg-[rgb(var(--brand))] flex flex-col">
-        <Nav />
         <HeroSection />
       </section>
       <EnbunIntro />
       <ProductIntro />
       <CompanyIntro />
       <Footer />
-    </main>
+    </div>
   )
 }
 
