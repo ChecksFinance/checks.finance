@@ -3,6 +3,8 @@ import { MDXFrontMatter } from '@/utils/types'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
+// import rehypePrism from 'rehype-prism-plus'
+// import remarkGfm from 'remark-gfm'
 
 type PostPageProps = {
   prev: MDXFrontMatter | null
@@ -44,7 +46,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const mdxContent = await serialize(content, {
     mdxOptions: {
-      // TODO parse markdown
+      // remarkPlugins: [remarkGfm],
+      // rehypePlugins: [rehypePrism],
     },
     scope: frontMatter,
   })
