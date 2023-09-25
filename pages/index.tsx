@@ -1,24 +1,16 @@
-import Image from 'next/image'
-import { Inter, Noto_Sans_JP } from 'next/font/google'
-import { FC, ReactNode } from 'react'
-import MdxPage from './mdx.mdx'
-import { Nav } from '@/components/Nav'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import { GetStaticProps, GetStaticPropsResult } from 'next'
+import { GetStaticProps } from 'next'
 import { HeroSection } from '@/components/HeroSection'
 import { EnbunIntro } from '@/components/EnbunIntro'
 import { ProductIntro } from '@/components/ProductIntro'
 import { CompanyIntro } from '@/components/CompanyIntro'
 import { Footer } from '@/components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
-const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <div
-      className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip ${notoSansJp.className}`}
+      className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip`}
     >
       <section className="sm:h-screen bg-[rgb(var(--brand))] flex flex-col">
         <HeroSection />

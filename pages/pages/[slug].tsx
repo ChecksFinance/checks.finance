@@ -1,10 +1,13 @@
+import { Footer } from '@/components/Footer'
+import { Prose } from '@/components/Prose'
 import { getAllMdx } from '@/utils/mdx'
 import { MDXFrontMatter } from '@/utils/types'
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
-// import rehypePrism from 'rehype-prism-plus'
-// import remarkGfm from 'remark-gfm'
+import rehypePrism from 'rehype-prism-plus'
+import remarkGfm from 'remark-gfm'
+import remarkPrism from 'remark-prism'
 
 type PostPageProps = {
   prev: MDXFrontMatter | null
@@ -13,11 +16,21 @@ type PostPageProps = {
   mdx: any
 }
 
+const components = {
+  Test: (props: any) => (
+    <a className="!text-green-700" {...props}>
+      aaa Test
+    </a>
+  ),
+}
+
 const PostPage: NextPage<PostPageProps> = ({ prev, next, mdx, frontMatter }) => {
   return (
-    <div className="text-black">
-      <h1>pages pages/[slug]</h1>
-      <MDXRemote {...mdx} />
+    <div className="text-black flex flex-col items-stretch">
+      <Prose>
+        <MDXRemote {...mdx} components={components} />
+      </Prose>
+      <Footer />
     </div>
   )
 }
@@ -46,7 +59,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const mdxContent = await serialize(content, {
     mdxOptions: {
-      // remarkPlugins: [remarkGfm],
+      remarkPlugins: [remarkPrism, remarkGfm],
       // rehypePlugins: [rehypePrism],
     },
     scope: frontMatter,
