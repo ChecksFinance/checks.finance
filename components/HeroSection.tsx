@@ -2,6 +2,7 @@ import { FC } from 'react'
 import illustration from '@/public/images/illustration_2_1470x850.png'
 import Image from 'next/image'
 import { Typewriter } from '@/components/Typewriter'
+import Spline from '@splinetool/react-spline'
 
 export const HeroSection: FC = () => {
   return (
@@ -17,6 +18,7 @@ export const HeroSection: FC = () => {
       <div className="flex-[5]"></div>
       <div className="flex items-end sm:absolute bottom-0 left-0 right-0 mx-auto  ">
         <Image src={illustration} alt="illustration" className="mx-auto" />
+        {/* <Spline scene="https://prod.spline.design/6JC4JTC1hhisaQ1P/scene.splinecode" /> */}
       </div>
     </div>
   )
