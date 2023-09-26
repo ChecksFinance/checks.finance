@@ -25,13 +25,7 @@ export const HeroSection: FC = () => {
       </div>
       <div className="flex-[5]"></div>
       <div className="flex items-end sm:absolute bottom-0 left-0 right-0 mx-auto  ">
-        <div className="aspect-video w-full  min-h-[400px] max-h-[60vh]">
-          {/* <Spline
-            scene="https://prod.spline.design/6JC4JTC1hhisaQ1P/scene.splinecode"
-            style={{
-              width: '100%',
-            }}
-          /> */}
+        <div className="aspect-video w-full  min-h-[100px] max-h-[60vh]">
           <Spline
             scene="https://prod.spline.design/CeH9gkPLXCAftkDS/scene.splinecode"
             style={{
@@ -39,7 +33,6 @@ export const HeroSection: FC = () => {
             }}
           />
         </div>
-        {/* <Image src={illustration} alt="illustration" className="mx-auto" /> */}
       </div>
     </div>
   )
