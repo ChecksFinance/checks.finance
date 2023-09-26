@@ -1,6 +1,6 @@
 export type MDXFrontMatter = {
   slug: string
-  title: string
+  title?: string
   description?: string
   date: string
   cover?: string

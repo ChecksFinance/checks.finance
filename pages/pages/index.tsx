@@ -1,4 +1,5 @@
 import { Footer } from '@/components/Footer'
+import { Page } from '@/components/Page'
 import { PostList } from '@/components/PostList'
 import { getAllMdx } from '@/utils/mdx'
 import { MDXFrontMatter } from '@/utils/types'
@@ -11,12 +12,14 @@ type PageProps = {
 
 const IndexPage: NextPage<PageProps> = ({ posts }) => {
   return (
-    <div className="flex flex-col items-center min-h-screen">
-      <div className="px-[20px] py-[100px] w-full md:w-[800px] flex-1">
-        <PostList posts={posts} />
+    <Page title="Blog">
+      <div className="flex flex-col items-center min-h-screen">
+        <div className="px-[20px] py-[100px] w-full md:w-[800px] flex-1">
+          <PostList posts={posts} />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Page>
   )
 }
 

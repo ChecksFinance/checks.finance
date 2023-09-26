@@ -6,20 +6,23 @@ import { EnbunIntro } from '@/components/EnbunIntro'
 import { ProductIntro } from '@/components/ProductIntro'
 import { CompanyIntro } from '@/components/CompanyIntro'
 import { Footer } from '@/components/Footer'
+import { Page } from '@/components/Page'
 
 export default function Home() {
   return (
-    <div
-      className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip`}
-    >
-      <section className="sm:h-screen bg-[rgb(var(--brand))] flex flex-col">
-        <HeroSection />
-      </section>
-      <EnbunIntro />
-      <ProductIntro />
-      <CompanyIntro />
-      <Footer />
-    </div>
+    <Page>
+      <div
+        className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip`}
+      >
+        <section className="sm:h-screen bg-[rgb(var(--brand))] flex flex-col">
+          <HeroSection />
+        </section>
+        <EnbunIntro />
+        <ProductIntro />
+        <CompanyIntro />
+        <Footer />
+      </div>
+    </Page>
   )
 }
 

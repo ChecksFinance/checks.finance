@@ -1,4 +1,5 @@
 import { Footer } from '@/components/Footer'
+import { Page } from '@/components/Page'
 import { Prose } from '@/components/Prose'
 import { getAllMdx } from '@/utils/mdx'
 import { MDXFrontMatter } from '@/utils/types'
@@ -26,12 +27,14 @@ const components = {
 
 const PostPage: NextPage<PostPageProps> = ({ prev, next, mdx, frontMatter }) => {
   return (
-    <div className="text-black flex flex-col items-stretch">
-      <Prose>
-        <MDXRemote {...mdx} components={components} />
-      </Prose>
-      <Footer />
-    </div>
+    <Page {...frontMatter}>
+      <div className="text-black flex flex-col items-stretch">
+        <Prose>
+          <MDXRemote {...mdx} components={components} />
+        </Prose>
+        <Footer />
+      </div>
+    </Page>
   )
 }
 
