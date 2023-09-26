@@ -5,15 +5,18 @@ import type { AppProps } from 'next/app'
 import { appWithTranslation } from 'next-i18next'
 import { Nav } from '@/components/Nav'
 import { Noto_Sans_JP } from 'next/font/google'
+import { TooltipProvider } from '@/components/ui/tooltip'
 
 const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] })
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`relative ${notoSansJp.className}`}>
-      <Nav />
-      <Component {...pageProps} />
-    </main>
+    <TooltipProvider>
+      <main className={`relative ${notoSansJp.className}`}>
+        <Nav />
+        <Component {...pageProps} />
+      </main>
+    </TooltipProvider>
   )
 }
 
