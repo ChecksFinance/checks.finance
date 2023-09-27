@@ -33,36 +33,38 @@ export const Nav: FC = () => {
   }
 
   return (
-    <nav
-      className={cn(
-        'h-[88px] flex items-center justify-between sm:px-[64px] px-[20px] bg-brand',
-        theme === 'brand' ? 'bg-brand' : 'bg-white'
-      )}
-    >
-      <Link href="/">
-        <Logo className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')} />
-      </Link>
-      <div className="flex-1 flex justify-center px-[20px]">
-        <ul
-          className={cn(
-            'flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px] [&>li]:cursor-pointer whitespace-nowrap',
-            theme === 'brand' ? 'text-white' : 'text-gray1'
-          )}
-        >
-          <li className="max-md:hidden" onClick={() => handleTabClick('#product-intro')}>
-            {t('nav.product')}
-          </li>
-          <li className="max-md:hidden" onClick={() => handleTabClick('#company-intro')}>
-            {t('nav.about')}
-          </li>
-          <Link href="/pages">
-            <li className={cn(isInPostTab && 'text-brand')}>{t('nav.blog')}</li>
-          </Link>
-        </ul>
-      </div>
-      <div className={cn(theme === 'brand' ? 'text-white' : 'text-gray1')}>
-        <LangSwitch />
-      </div>
-    </nav>
+    <div className="absolute left-0 right-0 top-0 w-full z-10">
+      <nav
+        className={cn(
+          'w-full h-[var(--nav-h)] flex items-center justify-between sm:px-[64px] px-[20px] bg-brand',
+          theme === 'brand' ? 'bg-brand' : 'bg-white'
+        )}
+      >
+        <Link href="/">
+          <Logo className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')} />
+        </Link>
+        <div className="flex-1 flex justify-center px-[20px]">
+          <ul
+            className={cn(
+              'flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px] [&>li]:cursor-pointer whitespace-nowrap',
+              theme === 'brand' ? 'text-white' : 'text-gray1'
+            )}
+          >
+            <li className="max-md:hidden" onClick={() => handleTabClick('#product-intro')}>
+              {t('nav.product')}
+            </li>
+            <li className="max-md:hidden" onClick={() => handleTabClick('#company-intro')}>
+              {t('nav.about')}
+            </li>
+            <Link href="/pages">
+              <li className={cn(isInPostTab && 'text-brand')}>{t('nav.blog')}</li>
+            </Link>
+          </ul>
+        </div>
+        <div className={cn(theme === 'brand' ? 'text-white' : 'text-gray1')}>
+          <LangSwitch />
+        </div>
+      </nav>
+    </div>
   )
 }

@@ -13,12 +13,12 @@ type PageProps = {
 const IndexPage: NextPage<PageProps> = ({ posts }) => {
   return (
     <Page title="Blog">
-      <div className="flex flex-col items-center min-h-screen">
+      <div className="flex flex-col items-center min-h-screen pt-[var(--nav-h)]">
         <div className="px-[20px] py-[100px] w-full md:w-[800px] flex-1">
           <PostList posts={posts} />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </Page>
   )
 }
