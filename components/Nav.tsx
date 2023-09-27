@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Logo from '@/components/Icons/Logo'
 import { useRouter } from 'next/router'
 import cn from '@/utils/merge'
+import { LangSwitch } from './LangSwitch'
 
 export const Nav: FC = () => {
   const { pathname, push } = useRouter()
@@ -56,7 +57,9 @@ export const Nav: FC = () => {
           </Link>
         </ul>
       </div>
-      <div className={cn(theme === 'brand' ? 'text-white' : 'text-gray1')}>JP</div>
+      <div className={cn(theme === 'brand' ? 'text-white' : 'text-gray1')}>
+        <LangSwitch />
+      </div>
     </nav>
   )
 }
