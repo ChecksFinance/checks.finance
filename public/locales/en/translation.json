@@ -1,0 +1,12 @@
+{
+  "hello": "hello",
+  "look": {
+    "deep": "value of look deep"
+  },
+
+  "nav": {
+    "product": "Products & Services",
+    "about": "About Us",
+    "blog": "Blog"
+  }
+}

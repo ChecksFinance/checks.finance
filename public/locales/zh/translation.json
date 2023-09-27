@@ -1,0 +1,11 @@
+{
+  "hello": "你好",
+  "look": {
+    "deep": "value of look deep"
+  },
+  "nav": {
+    "product": "产品与服务",
+    "about": "关于我们",
+    "blog": "博客"
+  }
+}

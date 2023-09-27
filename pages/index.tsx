@@ -1,5 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
 import { GetStaticProps } from 'next'
 import { HeroSection } from '@/components/HeroSection'
 import { EnbunIntro } from '@/components/EnbunIntro'
@@ -7,6 +5,8 @@ import { ProductIntro } from '@/components/ProductIntro'
 import { CompanyIntro } from '@/components/CompanyIntro'
 import { Footer } from '@/components/Footer'
 import { Page } from '@/components/Page'
+import { clientNamespaces, loadTranslations } from 'ni18n'
+import { ni18nConfig } from '@/ni18n.config'
 
 export default function Home() {
   return (
@@ -29,8 +29,7 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? 'en')),
-      // Will be passed to the page component as props
+      ...clientNamespaces(ni18nConfig, ['translation']),
     },
   }
 }

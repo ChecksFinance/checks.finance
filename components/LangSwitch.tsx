@@ -7,7 +7,14 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { FC, useState } from 'react'
+import { useRouter } from 'next/router'
+import { FC, useEffect, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+
+const changeLanguage = (i18n: any, language: any) => {
+  window.localStorage.setItem('SITE_LOCALE', language)
+  i18n.changeLanguage(language)
+}
 
 const languages = [
   {
@@ -25,11 +32,25 @@ const languages = [
 ]
 
 export const LangSwitch: FC = () => {
-  const [currentLanguage, setLanguage] = useState('ja')
+  const { t, i18n } = useTranslation()
+  const [currentLanguage, setLanguage] = useState(i18n.language)
+
+  useEffect(() => {
+    if (!currentLanguage) {
+      setLanguage(i18n.language)
+    }
+  }, [i18n.language, currentLanguage])
+
   return (
-    <Select defaultValue={currentLanguage}>
+    <Select
+      value={currentLanguage}
+      onValueChange={(val) => {
+        setLanguage(val)
+        changeLanguage(i18n, val)
+      }}
+    >
       <SelectTrigger className="w-[100px] bg-transparent border-none focus-visible:border-none ![--tw-ring-shadow:none]">
-        <SelectValue placeholder="Select a fruit" />
+        <SelectValue placeholder="Lan" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

@@ -1,0 +1,12 @@
+{
+  "hello": "こんにちは",
+  "look": {
+    "deep": "value of look deep"
+  },
+
+  "nav": {
+    "product": "製品·サービス一覧",
+    "about": "会社概要",
+    "blog": "ブログ"
+  }
+}

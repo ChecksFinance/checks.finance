@@ -4,12 +4,11 @@ import Logo from '@/components/Icons/Logo'
 import { useRouter } from 'next/router'
 import cn from '@/utils/merge'
 import { LangSwitch } from './LangSwitch'
+import { useTranslation } from 'react-i18next'
 
 export const Nav: FC = () => {
   const { pathname, push } = useRouter()
-
-  // useLayoutEffect(() => {}, [pathname])
-  // const theme = 'brand'
+  const { t } = useTranslation()
 
   const theme = useMemo(() => {
     if (pathname === '/') {
@@ -50,10 +49,10 @@ export const Nav: FC = () => {
             theme === 'brand' ? 'text-white' : 'text-gray1'
           )}
         >
-          <li onClick={() => handleTabClick('#product-intro')}>製品·サービス一覧</li>
-          <li onClick={() => handleTabClick('#company-intro')}>会社概要</li>
+          <li onClick={() => handleTabClick('#product-intro')}>{t('nav.product')}</li>
+          <li onClick={() => handleTabClick('#company-intro')}>{t('nav.about')}</li>
           <Link href="/pages">
-            <li className={cn(isInPostTab && 'text-brand')}>ブログ</li>
+            <li className={cn(isInPostTab && 'text-brand')}>{t('nav.blog')}</li>
           </Link>
         </ul>
       </div>
