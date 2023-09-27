@@ -11,7 +11,7 @@ import dots from '@/public/images/dots.png'
 
 export const EnbunIntro: FC = () => {
   return (
-    <div className="pt-[120px] pb-[100px] px-[20px] sm:px-[60px]">
+    <div className="sm:pt-[120px] pt-[60px] sm:pb-[100px] pb-[60px] px-[20px] sm:px-[60px]">
       <SectionHeader
         h1={'リアルワールドにおけるWEB 3データソリューション'}
         h2={'Enbun Protocolを紹介します'}
@@ -21,7 +21,6 @@ export const EnbunIntro: FC = () => {
         <Image src={card_grid_pc} alt="card_grid_pc@3x.png" className="" />
       </div>
       <div className="sm:hidden text-gray3 px-[55px] flex flex-col gap-[32px] items-center">
-        <div className="text-[24px]">Enbun Protocol</div>
         <Image src={enbun0} alt="enbun0" />
         <div className="flex flex-col items-center gap-[24px]">
           <div>バリデーション、価格設定</div>

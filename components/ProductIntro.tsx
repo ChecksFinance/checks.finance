@@ -10,18 +10,17 @@ import cn from '@/utils/merge'
 export const ProductIntro: FC = () => {
   return (
     <div className="leading-none" id="product-intro">
-      <div className="bg-[rgb(242_244_245/0.32)]  pt-[120px] pb-[100px]  px-[20px] sm:px-[60px]">
+      <div className="bg-[rgb(242_244_245/0.32)] sm:pt-[120px]   pt-[60px] sm:pb-[100px] pb-[60px]   px-[20px] sm:px-[60px]">
         <SectionHeader
           h1={'製品紹介'}
           h2={'Checks for Business 製品紹介'}
           h3={'NFT 会員カード取引の各ステップを統合することで、チェックスは経済データエンジンを創り出しました。'}
         />
         <div className="max-w-[876px] w-[100%] mx-auto relative">
-          <Image src={illustration_3} alt="card_grid_pc@3x.png" className="" />
-          SectionHeader
+          <Image src={illustration_3} alt="card_grid_pc@3x.png" className="sm:drop-shadow-2xl drop-shadow-xl" />
         </div>
       </div>
-      <div className="bg-white flex justify-between flex-wrap py-[60px] px-[20px] sm:px-[60px] mx-auto max-w-[1000px]">
+      <div className="bg-white flex justify-between flex-wrap sm:py-[100px] py-[40px] px-[20px] sm:px-[60px] mx-auto max-w-[1000px]">
         <FeatureBullet
           icon={creditcardIcon}
           title="NFT会員カードシステム"

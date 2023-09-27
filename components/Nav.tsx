@@ -42,15 +42,19 @@ export const Nav: FC = () => {
       <Link href="/">
         <Logo className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')} />
       </Link>
-      <div className="hidden flex-1 md:flex justify-center px-[20px]">
+      <div className="flex-1 flex justify-center px-[20px]">
         <ul
           className={cn(
-            'flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px] [&>li]:cursor-pointer',
+            'flex justify-between text-[18px] [&>li]:whitespace-nowrap font-medium gap-[60px] [&>li]:cursor-pointer whitespace-nowrap',
             theme === 'brand' ? 'text-white' : 'text-gray1'
           )}
         >
-          <li onClick={() => handleTabClick('#product-intro')}>{t('nav.product')}</li>
-          <li onClick={() => handleTabClick('#company-intro')}>{t('nav.about')}</li>
+          <li className="max-md:hidden" onClick={() => handleTabClick('#product-intro')}>
+            {t('nav.product')}
+          </li>
+          <li className="max-md:hidden" onClick={() => handleTabClick('#company-intro')}>
+            {t('nav.about')}
+          </li>
           <Link href="/pages">
             <li className={cn(isInPostTab && 'text-brand')}>{t('nav.blog')}</li>
           </Link>

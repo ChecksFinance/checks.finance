@@ -9,7 +9,7 @@ import cn from '@/utils/merge'
 export const CompanyIntro: FC = () => {
   return (
     <div
-      className="bg-[rgb(242_244_245/0.32)]  pt-[120px] pb-[100px] text-black px-[20px] sm:px-[60px]"
+      className="bg-[rgb(242_244_245/0.32)]  sm:pt-[120px]  pt-[60px] sm:pb-[100px] pb-[60px]    text-black px-[20px] sm:px-[60px]"
       id="company-intro"
     >
       <SectionHeader h2={'会社概要'} h3={'チェックス株式会社のスタッフはすべて日本と中国の優秀な企業から来ています'} />
