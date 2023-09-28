@@ -14,9 +14,9 @@ export default function Home() {
       <div
         className={`flex min-h-screen w-screen flex-col items-stretch justify-start overflow-x-hidden overflow-x-clip`}
       >
-        <section className="h-screen bg-[rgb(var(--brand))] flex flex-col">
-          <HeroSection />
-        </section>
+        {/* <section className="h-screen bg-[rgb(var(--brand))] flex flex-col">
+        </section> */}
+        <HeroSection />
         <EnbunIntro />
         <ProductIntro />
         <CompanyIntro />

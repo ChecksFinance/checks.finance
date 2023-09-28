@@ -20,7 +20,7 @@ export const ProductIntro: FC = () => {
           <Image src={illustration_3} alt="card_grid_pc@3x.png" className="sm:drop-shadow-2xl drop-shadow-xl" />
         </div>
       </div>
-      <div className="bg-white flex justify-between flex-wrap sm:py-[100px] py-[40px] px-[20px] sm:px-[60px] mx-auto max-w-[1000px]">
+      <div className="bg-white flex justify-between flex-wrap sm:py-[100px] py-[40px] px-[40px] sm:px-[60px] mx-auto max-w-[1000px]">
         <FeatureBullet
           icon={creditcardIcon}
           title="NFT会員カードシステム"
