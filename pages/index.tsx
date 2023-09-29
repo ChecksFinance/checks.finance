@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import { HeroSection } from '@/components/HeroSection'
 import { EnbunIntro } from '@/components/EnbunIntro'
 import { ProductIntro } from '@/components/ProductIntro'
@@ -27,9 +27,11 @@ export default function Home() {
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const res = await loadTranslations(ni18nConfig, locale, ['translation'])
   return {
     props: {
-      ...clientNamespaces(ni18nConfig, ['translation']),
+      ...res,
+      // ...clientNamespaces(ni18nConfig, ['translation']),
     },
   }
 }

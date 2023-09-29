@@ -1,8 +1,6 @@
-export const ni18nConfig = {
+// ni18n.config.ts
+import type { Ni18nOptions } from 'ni18n'
+export const ni18nConfig: Ni18nOptions = {
   supportedLngs: ['en', 'zh', 'ja'],
-  fallbackLng: ['en', 'zh', 'ja'],
   ns: ['translation'],
-  react: {
-    useSuspense: false,
-  },
 }

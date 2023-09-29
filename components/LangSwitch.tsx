@@ -36,9 +36,7 @@ export const LangSwitch: FC = () => {
   const [currentLanguage, setLanguage] = useState(i18n.language)
 
   useEffect(() => {
-    if (!currentLanguage) {
-      setLanguage(i18n.language)
-    }
+    setLanguage(i18n.language)
   }, [i18n.language, currentLanguage])
 
   return (

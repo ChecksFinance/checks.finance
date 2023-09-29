@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
 
 export const Nav: FC = () => {
   const { pathname, push } = useRouter()
-  const { t } = useTranslation()
+  const { t } = useTranslation(['translation'])
 
   const theme = useMemo(() => {
     if (pathname === '/') {
