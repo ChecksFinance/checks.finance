@@ -1,6 +1,7 @@
 import { FC, useEffect, useLayoutEffect, useMemo } from 'react'
 import Link from 'next/link'
 import Logo from '@/components/Icons/Logo'
+import LogoEn from '@/components/Icons/LogoEn'
 import { useRouter } from 'next/router'
 import cn from '@/utils/merge'
 import { LangSwitch } from './LangSwitch'
@@ -8,7 +9,9 @@ import { useTranslation } from 'react-i18next'
 
 export const Nav: FC = () => {
   const { pathname, push } = useRouter()
-  const { t } = useTranslation(['translation'])
+  const { t, i18n } = useTranslation(['translation'])
+
+  const isEnglish = i18n.language === 'en'
 
   const theme = useMemo(() => {
     if (pathname === '/') {
@@ -41,7 +44,15 @@ export const Nav: FC = () => {
         )}
       >
         <Link href="/">
-          <Logo className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')} />
+          {isEnglish ? (
+            <LogoEn
+              className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')}
+            />
+          ) : (
+            <Logo
+              className={cn('w-[121.5px] h-[28px] flex-shrink-0', theme === 'brand' ? 'text-white' : 'text-brand')}
+            />
+          )}
         </Link>
         <div className="flex-1 flex justify-center px-[20px]">
           <ul

@@ -5,6 +5,7 @@ import { Typewriter } from '@/components/Typewriter'
 import Spline from '@splinetool/react-spline'
 import { TooltipTrigger, TooltipContent, Tooltip } from '@/components/ui/tooltip'
 import { useTranslation } from 'react-i18next'
+import { SplineView } from './SplineView'
 
 export const HeroSection: FC = () => {
   const { t } = useTranslation([])
@@ -26,16 +27,7 @@ export const HeroSection: FC = () => {
         </Tooltip>
       </div>
       <div className="flex-[5]"></div>
-      <div className="flex items-end sm:absolute bottom-0 left-0 right-0  mx-auto  ">
-        <div className="aspect-video w-full max-sm:h-[56vw]  min-h-[100px] max-h-[45vh]">
-          <Spline
-            scene="https://prod.spline.design/CeH9gkPLXCAftkDS/scene.splinecode"
-            style={{
-              width: '100%',
-            }}
-          />
-        </div>
-      </div>
+      <SplineView />
     </div>
   )
 }

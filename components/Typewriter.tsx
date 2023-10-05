@@ -48,10 +48,10 @@ export const Typewriter: FC = () => {
     // console.log('started', started, i18n.language)
     if (started) return
     started = true
-    console.log('play')
+    // console.log('play')
     play()
     return () => {
-      console.log('clear')
+      // console.log('clear')
       clearTimeout(timerRef.current as any)
       started = false
     }
