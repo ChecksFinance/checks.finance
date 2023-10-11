@@ -1,68 +1,69 @@
 {
   "nav": {
-    "product": "Products & Services",
+    "product": "Product & Service",
     "about": "About Us",
     "blog": "Blog"
   },
 
   "hero": {
-    "h1": "Sell your own data",
-    "h2-0": "data",
-    "signup": "Sign up",
-    "signup-tip": "Open soon",
-    "typewriter": ["respect", "rebuild", "resell"]
+    "h1": "Sell Your Own Data",
+    "h2-0": "Data",
+    "signup": "Sign Up",
+    "signup-tip": "Coming Soon",
+    "typewriter": ["Respect", "Rebuild", "Resell"]
   },
+
   "enbun_intro": {
-    "h1": "リアルワールドにおけるWEB 3データソリューション",
-    "h2": "Enbun Protocolを紹介します",
-    "h3": "enbunは、お店で発行されたNFT会員カードやポイントを他のお店で発行されたポイントに柔軟か。",
-    "p1": "バリデーション、価格設定",
-    "p2": "セール、リース",
-    "p3-l1": "マーケティング、メンバーシップ",
-    "p3-l2": "クレジットプログラム",
-    "p4": "ミント",
-    "p5-l1": "ウェブ3資産",
-    "p5-l2": "NFTs , ERC20, SBT, ポイント"
+    "h1": "WEB 3 Data Solutions in the Real World",
+    "h2": "Introducing the Enbun Protocol",
+    "h3": "Enbun allows flexible interchange of NFT membership cards and points issued at stores with those issued at other stores.",
+    "p1": "Validation, Pricing",
+    "p2": "Sales, Leasing",
+    "p3-l1": "Marketing, Membership",
+    "p3-l2": "Credit Programs",
+    "p4": "Minting",
+    "p5-l1": "Web 3 Assets",
+    "p5-l2": "NFTs, ERC20, SBT, Points"
   },
 
   "product_intro": {
-    "h1": "製品紹介",
-    "h2": "Checks for Business 製品紹介",
-    "h3": "NFT 会員カード取引の各ステップを統合することで、チェックスは経済データエンジンを創り出しました。",
+    "h1": "Product Introduction",
+    "h2": "Checks for Business Product Introduction",
+    "h3": "Checks has created an economic data engine by integrating each step of NFT membership card transactions.",
     "feature1": {
-      "title": "NFT会員カードシステム",
-      "desc": "さまざまなシリーズ、さまざまなレベルのNFT会員カードを発行し、各レベルの会員カードに対してポイントの蓄積率と昇格ルールを設定できます。これらの会員カードの契約はすべてブロックチェーンネットワークに公開され、永続的に存在します。"
+      "title": "NFT Membership Card System",
+      "desc": "Various series and levels of NFT membership cards can be issued, and points accumulation rates and promotion rules can be set for each level of membership card. The contracts for these membership cards are publicly available on the blockchain network and exist permanently."
     },
     "feature2": {
-      "title": "暗号化電子レシート",
-      "desc": "NFT会員カードを使用したすべてのトランザクションは、ユーザーのプライベートキーで暗号化されてブロックチェーンネットワークに保存されます。プライベートキーによる暗号化を使用しているため、データは消費者自身だけが管理できます。"
+      "title": "Encrypted Electronic Receipts",
+      "desc": "All transactions using NFT membership cards are encrypted with the user's private key and stored on the blockchain network. Due to the use of private key encryption, data can only be managed by the consumer."
     },
     "feature3": {
-      "title": "分散型情報銀行",
-      "desc": "消費者データの分析とトレンドのプラットフォーム - 分散型データバンクを提供しています。これはLMM（大規模言語モデル）の技術を活用しており、自然言語を使ってデータを検索することを可能にします。このデータは自社で活用できるのはもちろんのこと、自社のデータを必要とする企業に販売することができます。"
+      "title": "Decentralized Information Bank",
+      "desc": "We provide a decentralized data bank for consumer data analysis and trend platform, utilizing LMM (Large Language Model) technology to enable data retrieval using natural language. This data can be used in-house and sold to companies in need of their data."
     }
   },
 
   "company_intro": {
-    "h2": "会社概要",
-    "h3": "チェックス株式会社のスタッフはすべて日本と中国の優秀な企業から来ています",
+    "h2": "About the Company",
+    "h3": "All of Checks, Inc.'s staff come from excellent companies in Japan and China.",
     "guoyu": {
-      "name": "郭宇",
-      "title": "創設者",
-      "desc": "チェックス株式会社の創設者は、ByteDance（TikTokの親会社）の473番目の社員である郭宇で、彼はシリアルアントレプレナーで、彼が共同設立した会社が2014年にByteDanceに買収された後、高度な技術専門家の地位に就き、6年間働いたのち2020年に日本にて起業しました。"
+      "name": "Guoyu",
+      "title": "Founder",
+      "desc": "The founder of Checks, Inc., Guoyu, was the 473rd employee of ByteDance (the parent company of TikTok). He is a serial entrepreneur. After the company he co-founded was acquired by ByteDance in 2014, he worked as a senior technical expert for 6 years and then started a business in Japan in 2020."
     },
     "arakawa": {
       "name": "Syuhei Arakawa",
-      "title": "BDパートナー＆コンサルタント",
-      "desc": "また、シニアプロダクトマネージャーは以前ByteDance、やOnePlusでシニアプロダクトマネージャーを務めていた人物で、デザイナーと開発エンジニアは中国の人気アプリ「即刻」制作会社の出身です。"
+      "title": "BD Partner & Consultant",
+      "desc": "Additionally, the Senior Product Manager previously served as a Senior Product Manager at ByteDance and OnePlus, while the designer and development engineer come from the production company of the popular Chinese app 'Jike'."
     },
     "others": {
-      "name": "社員",
-      "title": "また、シニアプロダクトマネージャーは以前ByteDance、やOnePlusでシニアプロダクトマネージャーを務めていた人物で、デザイナーと開発エンジニアは中国の人気アプリ「即刻」制作会社の出身です。"
+      "name": "Employees",
+      "title": "Additionally, the Senior Product Manager previously served as a Senior Product Manager at ByteDance and OnePlus, while the designer and development engineer come from the production company of the popular Chinese app 'Jike'."
     }
   },
 
   "footer": {
-    "content": "© 2023 Checks, Inc. All Rights reserved."
+    "content": "© 2023 Checks, Inc. All Rights Reserved."
   }
 }
